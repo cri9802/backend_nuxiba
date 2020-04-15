@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+   
+ 
+  <table border="1" align="center">
+  <tr>
+  	
+  	<td>No. Lista</td><td>Matricula</td><td>Apellido P</td><td>ApellidoM</td><td>Nombre</td><td>fecha N</td><td>Edad</td><td>Email</td><td>Genero</td><td>Mayor - Menor</td></tr>
+  	<tr *ngFor="let alm of Alumnos">
+ 	<td>{{alm.num}}</td><td>{{alm.matricula}}</td><td>{{alm.app}}</td><td>{{alm.apm}}</td><td>{{alm.nombre}}</td><td>{{alm.fn}}</td><td>{{2019-(alm.fn | date:"yyyy")}}</td><td>{{alm.email}}</td><td>{{alm.genero == 'M' ? 'Masculino' : 'Femenino'}}</td><td align="centrer">{{2019-(alm.fn | date:"yyyy")>18 ? 'Mayor' : 'Menor'}}</td>
+ 	</tr>
+ 
+ </table>
+ 
+ 
+
